@@ -50,3 +50,4 @@
 /Users/aneesh/Documents/Workspace/RADAR/RADAR.core/obj/Debug/net8.0/RADAR.core.pdb
 /Users/aneesh/Documents/Workspace/RADAR/RADAR.core/obj/Debug/net8.0/RADAR.core.genruntimeconfig.cache
 /Users/aneesh/Documents/Workspace/RADAR/RADAR.core/obj/Debug/net8.0/ref/RADAR.core.dll
+/Users/aneesh/Documents/Workspace/RADAR/RADAR.core/obj/Debug/net8.0/RADAR.core.sourcelink.json

@@ -1,0 +1,853 @@
+{
+  "generatedAt": "2025-09-02T19:10:47.457312Z",
+  "totalCorrelations": 42,
+  "correlationTypes": {
+    "TEMPORAL_CLUSTER": 1,
+    "MALWARE_FAMILY_CLUSTER": 1,
+    "INFRASTRUCTURE_CLUSTER": 15,
+    "THREAT_ACTOR_ATTRIBUTION": 25
+  },
+  "highConfidenceCount": 24,
+  "correlations": [
+    {
+      "id": "4fa28826-c67f-42ec-a29d-cbb7eb5caf76",
+      "correlationType": "TEMPORAL_CLUSTER",
+      "description": "Coordinated threat activity: 3418 indicators from 3 sources within 1-hour window",
+      "confidenceScore": 0.8999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.440495Z",
+      "indicatorCount": 3418,
+      "sources": [
+        "AlienVault_OTX",
+        "Abuse.ch_MalwareBazaar",
+        "MITRE_ATT\u0026CK"
+      ],
+      "analysisDetails": {
+        "time_window": "2025-09-02 19:00",
+        "indicator_count": 3418,
+        "source_diversity": 3
+      }
+    },
+    {
+      "id": "89f42b18-e605-48fb-bb42-1d4c7dd2216e",
+      "correlationType": "MALWARE_FAMILY_CLUSTER",
+      "description": "Malware family Mirai: 46 related samples from 1 sources",
+      "confidenceScore": 0.8500000000000001,
+      "discoveredAt": "2025-09-02T19:10:47.446878Z",
+      "indicatorCount": 46,
+      "sources": [
+        "Abuse.ch_MalwareBazaar"
+      ],
+      "analysisDetails": {
+        "malware_family": "Mirai",
+        "sample_count": 46,
+        "hash_types": 46,
+        "source_diversity": 1
+      }
+    },
+    {
+      "id": "22e4df3e-8f70-4ac7-89fc-345eb77b7d63",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 8 subdomains under cprapid.com",
+      "confidenceScore": 0.85,
+      "discoveredAt": "2025-09-02T19:10:47.449066Z",
+      "indicatorCount": 8,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "cprapid.com",
+        "subdomain_count": 8,
+        "threat_actors": [
+          "Infrastructure",
+          "Indian"
+        ]
+      }
+    },
+    {
+      "id": "ca347fd1-48cb-4c5d-8498-66435cfd71b4",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 6 subdomains under com.br",
+      "confidenceScore": 0.85,
+      "discoveredAt": "2025-09-02T19:10:47.449072Z",
+      "indicatorCount": 6,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "com.br",
+        "subdomain_count": 6,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "6f5b82fe-da5a-404a-ad18-12abaaf76377",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 18 subdomains under duckdns.org",
+      "confidenceScore": 0.85,
+      "discoveredAt": "2025-09-02T19:10:47.449079Z",
+      "indicatorCount": 18,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "duckdns.org",
+        "subdomain_count": 18,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "a187c22f-c426-4dc4-b039-912e3f468c6e",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 14 subdomains under plesk.page",
+      "confidenceScore": 0.85,
+      "discoveredAt": "2025-09-02T19:10:47.449104Z",
+      "indicatorCount": 14,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "plesk.page",
+        "subdomain_count": 14,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "a8343b29-26df-45e4-ae40-17b623c21f23",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 10 subdomains under quickhelpsolve.com",
+      "confidenceScore": 0.85,
+      "discoveredAt": "2025-09-02T19:10:47.449141Z",
+      "indicatorCount": 10,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "quickhelpsolve.com",
+        "subdomain_count": 10,
+        "threat_actors": [
+          "UNC"
+        ]
+      }
+    },
+    {
+      "id": "c6c45c2a-6a46-484a-8673-d3a5d604515a",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 5 subdomains under co.uk",
+      "confidenceScore": 0.8,
+      "discoveredAt": "2025-09-02T19:10:47.449089Z",
+      "indicatorCount": 5,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "co.uk",
+        "subdomain_count": 5,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "eeb3f2cc-cce6-473f-ba92-e85176303b78",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 5 subdomains under localto.net",
+      "confidenceScore": 0.8,
+      "discoveredAt": "2025-09-02T19:10:47.449107Z",
+      "indicatorCount": 5,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "localto.net",
+        "subdomain_count": 5,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "da27d260-b66f-4256-9ab7-07b30ddd66a2",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Infrastructure activities: 1685 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.443823Z",
+      "indicatorCount": 1685,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Infrastructure",
+        "indicator_types": {
+          "Domain": 1685
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "e182dbf9-76f1-42e2-9806-c8cc5c3df6bd",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Traps activities: 36 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445661Z",
+      "indicatorCount": 36,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Traps",
+        "indicator_types": {
+          "FileHash": 20,
+          "IpAddress": 3,
+          "Url": 11,
+          "Domain": 2
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "52730a65-d779-4ee4-84bf-d159be241e80",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor From activities: 26 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.44568Z",
+      "indicatorCount": 26,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "From",
+        "indicator_types": {
+          "FileHash": 12,
+          "IpAddress": 1,
+          "Url": 5,
+          "Domain": 8
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "03ed8195-5f82-4b96-b2bd-050513ccb45f",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Behind activities: 79 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445703Z",
+      "indicatorCount": 79,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Behind",
+        "indicator_types": {
+          "FileHash": 76,
+          "Domain": 3
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "8c2a8122-a421-4061-a566-2250203fffdd",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Indian activities: 53 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445716Z",
+      "indicatorCount": 53,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Indian",
+        "indicator_types": {
+          "FileHash": 19,
+          "Domain": 34
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "f3ba05ec-23fe-448c-a000-f38e9dc22565",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor The activities: 48 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445732Z",
+      "indicatorCount": 48,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "The",
+        "indicator_types": {
+          "FileHash": 45,
+          "IpAddress": 2,
+          "Url": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "535a5b4b-a45e-4a88-bcb1-7570b19c82cb",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor FIN activities: 56 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7999999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445746Z",
+      "indicatorCount": 56,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "FIN",
+        "indicator_types": {
+          "IpAddress": 2,
+          "FileHash": 4,
+          "Domain": 50
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "81c1d608-7a27-47a6-824d-568df367a6dd",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Loophole activities: 21 indicators across 1 intelligence sources",
+      "confidenceScore": 0.73,
+      "discoveredAt": "2025-09-02T19:10:47.445771Z",
+      "indicatorCount": 21,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Loophole",
+        "indicator_types": {
+          "FileHash": 21
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "f7979435-fc42-432f-ace5-b98cc605c1c9",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 4 subdomains under amazonaws.com",
+      "confidenceScore": 0.72,
+      "discoveredAt": "2025-09-02T19:10:47.449109Z",
+      "indicatorCount": 4,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "amazonaws.com",
+        "subdomain_count": 4,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "5ad5ee53-3b38-45b4-959a-b75f050f96c3",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 4 subdomains under ddns.net",
+      "confidenceScore": 0.72,
+      "discoveredAt": "2025-09-02T19:10:47.449113Z",
+      "indicatorCount": 4,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "ddns.net",
+        "subdomain_count": 4,
+        "threat_actors": [
+          "Infrastructure",
+          "Sindoor"
+        ]
+      }
+    },
+    {
+      "id": "6374807d-3dba-4ef7-abcc-c1623445c6a2",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 4 subdomains under nominationdrdo.report",
+      "confidenceScore": 0.72,
+      "discoveredAt": "2025-09-02T19:10:47.449128Z",
+      "indicatorCount": 4,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "nominationdrdo.report",
+        "subdomain_count": 4,
+        "threat_actors": [
+          "Indian"
+        ]
+      }
+    },
+    {
+      "id": "dbd1236b-cd7f-4ab6-8140-d789075047ea",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 4 subdomains under it-sharepoint.com",
+      "confidenceScore": 0.72,
+      "discoveredAt": "2025-09-02T19:10:47.449135Z",
+      "indicatorCount": 4,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "it-sharepoint.com",
+        "subdomain_count": 4,
+        "threat_actors": [
+          "FIN"
+        ]
+      }
+    },
+    {
+      "id": "fc5e4e64-4aa3-471c-a273-79b2caa4a3b9",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Sindoor activities: 20 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7,
+      "discoveredAt": "2025-09-02T19:10:47.445623Z",
+      "indicatorCount": 20,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Sindoor",
+        "indicator_types": {
+          "FileHash": 17,
+          "Url": 1,
+          "Domain": 2
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "4363a481-bd1f-4ab8-aaaa-394bf6b5009f",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor FAKE activities: 20 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7,
+      "discoveredAt": "2025-09-02T19:10:47.44563Z",
+      "indicatorCount": 20,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "FAKE",
+        "indicator_types": {
+          "FileHash": 11,
+          "Domain": 9
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "c0cf0d75-56f7-4140-a9e8-094694e5053a",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor APT activities: 20 indicators across 1 intelligence sources",
+      "confidenceScore": 0.7,
+      "discoveredAt": "2025-09-02T19:10:47.445648Z",
+      "indicatorCount": 20,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "APT",
+        "indicator_types": {
+          "Domain": 8,
+          "FileHash": 7,
+          "IpAddress": 2,
+          "Url": 1,
+          "Email": 2
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "8a0377a0-9313-46b3-9695-1341e04f53c0",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Backdoor activities: 19 indicators across 1 intelligence sources",
+      "confidenceScore": 0.6699999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445763Z",
+      "indicatorCount": 19,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Backdoor",
+        "indicator_types": {
+          "FileHash": 18,
+          "Domain": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "09feb0bd-012e-4c03-8e9c-43ee4db50117",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 3 subdomains under izumisv1.cc",
+      "confidenceScore": 0.64,
+      "discoveredAt": "2025-09-02T19:10:47.448978Z",
+      "indicatorCount": 3,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "izumisv1.cc",
+        "subdomain_count": 3,
+        "threat_actors": [
+          "Infrastructure"
+        ]
+      }
+    },
+    {
+      "id": "bf51d939-747e-46ab-9e98-821c4b3742a3",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 3 subdomains under ministryofdefenceindia.org",
+      "confidenceScore": 0.64,
+      "discoveredAt": "2025-09-02T19:10:47.449131Z",
+      "indicatorCount": 3,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "ministryofdefenceindia.org",
+        "subdomain_count": 3,
+        "threat_actors": [
+          "Indian"
+        ]
+      }
+    },
+    {
+      "id": "f58d745a-5d65-4790-9cdc-bbff1dab47ff",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 3 subdomains under indiandefence.services",
+      "confidenceScore": 0.64,
+      "discoveredAt": "2025-09-02T19:10:47.449133Z",
+      "indicatorCount": 3,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "indiandefence.services",
+        "subdomain_count": 3,
+        "threat_actors": [
+          "Indian"
+        ]
+      }
+    },
+    {
+      "id": "18f4b5ff-162b-4533-ba10-0cc1c16221bb",
+      "correlationType": "INFRASTRUCTURE_CLUSTER",
+      "description": "Related infrastructure: 3 subdomains under walshhgroup.com",
+      "confidenceScore": 0.64,
+      "discoveredAt": "2025-09-02T19:10:47.449137Z",
+      "indicatorCount": 3,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "root_domain": "walshhgroup.com",
+        "subdomain_count": 3,
+        "threat_actors": [
+          "FIN"
+        ]
+      }
+    },
+    {
+      "id": "8523a623-6a21-41db-aea9-909343786dbe",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Active activities: 17 indicators across 1 intelligence sources",
+      "confidenceScore": 0.61,
+      "discoveredAt": "2025-09-02T19:10:47.445689Z",
+      "indicatorCount": 17,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Active",
+        "indicator_types": {
+          "FileHash": 16,
+          "Email": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "c6d011b0-6c8f-438b-9c7e-b6bc0155d6e7",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor CTI activities: 15 indicators across 1 intelligence sources",
+      "confidenceScore": 0.5499999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445597Z",
+      "indicatorCount": 15,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "CTI",
+        "indicator_types": {
+          "FileHash": 13,
+          "Url": 1,
+          "Domain": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "febeb45b-aa5a-43eb-b723-59703546c342",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Interlock activities: 15 indicators across 1 intelligence sources",
+      "confidenceScore": 0.5499999999999999,
+      "discoveredAt": "2025-09-02T19:10:47.445675Z",
+      "indicatorCount": 15,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Interlock",
+        "indicator_types": {
+          "FileHash": 15
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "7f395a42-dc7a-404d-9a3a-a2419667dd00",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Operation activities: 12 indicators across 1 intelligence sources",
+      "confidenceScore": 0.45999999999999996,
+      "discoveredAt": "2025-09-02T19:10:47.44574Z",
+      "indicatorCount": 12,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Operation",
+        "indicator_types": {
+          "FileHash": 12
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "d6910951-dbd9-4f7d-addb-2965fad07ee9",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Unmasking activities: 12 indicators across 1 intelligence sources",
+      "confidenceScore": 0.45999999999999996,
+      "discoveredAt": "2025-09-02T19:10:47.445754Z",
+      "indicatorCount": 12,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Unmasking",
+        "indicator_types": {
+          "IpAddress": 3,
+          "FileHash": 9
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "9a04cfce-8e7b-423d-afc0-eec46c46e1aa",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor New activities: 11 indicators across 1 intelligence sources",
+      "confidenceScore": 0.42999999999999994,
+      "discoveredAt": "2025-09-02T19:10:47.445669Z",
+      "indicatorCount": 11,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "New",
+        "indicator_types": {
+          "FileHash": 10,
+          "Domain": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "7ee0dda8-87b1-4dbd-ae1a-1945af153673",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Auto-Color activities: 11 indicators across 1 intelligence sources",
+      "confidenceScore": 0.42999999999999994,
+      "discoveredAt": "2025-09-02T19:10:47.445726Z",
+      "indicatorCount": 11,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Auto-Color",
+        "indicator_types": {
+          "FileHash": 3,
+          "Url": 4,
+          "Domain": 4
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "f29a0873-3ac7-4ca9-8551-40fb3c08de47",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Microsoft activities: 10 indicators across 1 intelligence sources",
+      "confidenceScore": 0.4,
+      "discoveredAt": "2025-09-02T19:10:47.445694Z",
+      "indicatorCount": 10,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Microsoft",
+        "indicator_types": {
+          "FileHash": 1,
+          "Url": 4,
+          "Domain": 5
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "83ca2a22-21ae-4771-87b5-7c09f5d14b99",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor LNK activities: 10 indicators across 1 intelligence sources",
+      "confidenceScore": 0.4,
+      "discoveredAt": "2025-09-02T19:10:47.445758Z",
+      "indicatorCount": 10,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "LNK",
+        "indicator_types": {
+          "FileHash": 7,
+          "Url": 1,
+          "Domain": 2
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "a95cd82c-c7f4-4307-8341-85e19ace2b03",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor AI activities: 9 indicators across 1 intelligence sources",
+      "confidenceScore": 0.37,
+      "discoveredAt": "2025-09-02T19:10:47.445644Z",
+      "indicatorCount": 9,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "AI",
+        "indicator_types": {
+          "FileHash": 9
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "81fe742b-81ae-4819-beec-d7963274510e",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Link activities: 9 indicators across 1 intelligence sources",
+      "confidenceScore": 0.37,
+      "discoveredAt": "2025-09-02T19:10:47.445767Z",
+      "indicatorCount": 9,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Link",
+        "indicator_types": {
+          "FileHash": 9
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "37fd710a-c410-408b-9905-c0e753bff424",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor A activities: 7 indicators across 1 intelligence sources",
+      "confidenceScore": 0.31,
+      "discoveredAt": "2025-09-02T19:10:47.445636Z",
+      "indicatorCount": 7,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "A",
+        "indicator_types": {
+          "Domain": 2,
+          "IpAddress": 4,
+          "FileHash": 1
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    },
+    {
+      "id": "6c236fb0-4c3b-4706-a1f5-238d9bb89e56",
+      "correlationType": "THREAT_ACTOR_ATTRIBUTION",
+      "description": "Threat actor Warning activities: 6 indicators across 1 intelligence sources",
+      "confidenceScore": 0.28,
+      "discoveredAt": "2025-09-02T19:10:47.44564Z",
+      "indicatorCount": 6,
+      "sources": [
+        "AlienVault_OTX"
+      ],
+      "analysisDetails": {
+        "actor_name": "Warning",
+        "indicator_types": {
+          "FileHash": 6
+        },
+        "source_attribution": [
+          "AlienVault_OTX"
+        ]
+      }
+    }
+  ]
+}
