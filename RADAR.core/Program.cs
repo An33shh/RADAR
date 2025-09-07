@@ -26,6 +26,8 @@ namespace RADAR.Core
                 var configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                    .AddJsonFile("appsettings.local.json", optional: true, reloadOnChange: true)
+                    .AddEnvironmentVariables()
                     .Build();
 
                 var services = new ServiceCollection();
@@ -37,7 +39,7 @@ namespace RADAR.Core
                 logger.LogInformation("RADAR starting up...");
 
                 var appConfig = serviceProvider.GetRequiredService<AppConfig>();
-                
+
                 DisplayConfigurationSummary(appConfig, logger);
 
                 var orchestrator = serviceProvider.GetRequiredService<ThreatIntelligenceOrchestrator>();
@@ -46,7 +48,7 @@ namespace RADAR.Core
                 await GenerateReportsAsync(serviceProvider, report);
 
                 DisplayAnalysisReport(report);
-                
+
                 Console.WriteLine("\nPress any key to exit...");
                 Console.ReadKey();
             }
@@ -74,11 +76,11 @@ namespace RADAR.Core
             RegisterCollectors(services, appConfig);
 
             services.AddScoped<ICorrelationEngine, CorrelationEngine>();
-            
+
             services.AddScoped<IReportGenerator, ReportGenerator>();
-            
+
             services.AddScoped<DataStorageService>();
-            
+
             services.AddScoped<ThreatIntelligenceOrchestrator>();
         }
 
@@ -105,7 +107,7 @@ namespace RADAR.Core
                             return new AbuseCHCollector(httpClient, feedConfig, logger);
                         });
                         break;
-                        
+
                     case "mitre_attck":
                         services.AddScoped<IThreatIntelligenceCollector>(provider =>
                         {
@@ -126,13 +128,14 @@ namespace RADAR.Core
             logger.LogInformation($"   Request Timeout: {config.RequestTimeout}");
             logger.LogInformation($"   Output Directory: {config.OutputDirectory}");
             logger.LogInformation($"   Correlation Confidence Threshold: {config.Correlation.MinimumConfidenceThreshold:P1}");
-            
+
             Console.WriteLine($"📡 Active Feeds:");
             foreach (var feed in config.ThreatFeeds.Where(f => f.IsActive))
             {
-                Console.WriteLine($"   • {feed.Name} (Refresh: {feed.RefreshInterval})");
+                var hasKey = !string.IsNullOrEmpty(feed.ApiKey);
+                Console.WriteLine($"   • {feed.Name} (Refresh: {feed.RefreshInterval}) {(hasKey ? "✅" : "❌ No API Key")}");
             }
-            
+
             Console.WriteLine("\n🔄 Starting comprehensive threat intelligence analysis...");
         }
 
@@ -195,7 +198,7 @@ namespace RADAR.Core
             {
                 Console.WriteLine($"\n❌ Errors: {report.ErrorMessage}");
             }
-            
+
             Console.WriteLine($"\n✅ Analysis completed at {report.AnalysisCompletedAt:yyyy-MM-dd HH:mm:ss} UTC");
         }
 
@@ -236,7 +239,7 @@ namespace RADAR.Core
                 await dataStorage.CleanupOldDataAsync();
 
                 logger.LogInformation("📊 All reports generated successfully in {Directory}", config.OutputDirectory);
-                
+
                 Console.WriteLine($"\n📄 Reports Generated:");
                 Console.WriteLine($"   • Correlations: {Path.GetFileName(correlationReportPath)}");
                 Console.WriteLine($"   • Indicators CSV: {Path.GetFileName(csvReportPath)}");
