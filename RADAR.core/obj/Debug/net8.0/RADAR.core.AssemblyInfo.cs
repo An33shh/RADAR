@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RADAR.core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc409854b71fed4987c7349c5246caa20eb93dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+834460e771c9ecc8382d8613ba0de430d4df3654")]
 [assembly: System.Reflection.AssemblyProductAttribute("RADAR.core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RADAR.core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

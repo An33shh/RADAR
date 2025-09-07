@@ -80,6 +80,9 @@ ScaffoldingReadMe.txt
 # StyleCop
 StyleCopReport.xml
 
+# API Key
+RADAR.core/appsettings.local.json
+
 # Files built by Visual Studio
 *_i.c
 *_p.c
@@ -194,6 +197,17 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
+
+# RADAR specific - Configuration files with secrets
+appsettings.local.json
+appsettings.Development.json
+appsettings.Production.json
+
+# RADAR specific - Application data directories
+/Reports/
+/Data/
+/Logs/
+*.log
 
 # Publish Web Output
 *.[Pp]ublish.xml
